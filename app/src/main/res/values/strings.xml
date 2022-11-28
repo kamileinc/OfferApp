@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Offer App</string>
+    <string name="form_title">Offer search engine</string>
+    <string name="app_id">Application ID</string>
+    <string name="user_id">User ID</string>
+    <string name="token">Security Token</string>
+    <string name="search">Search</string>
+    <string name="error_text">The offers failed to load. \n Try again with different input</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/formFragment">
+
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.example.offerapp.ui.FormFragment"
+        android:label="fragment_form"
+        tools:layout="@layout/fragment_form" >
+        <action
+            android:id="@+id/action_formFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerFragment"
+        android:name="com.example.offerapp.ui.OfferFragment"
+        android:label="fragment_offer"
+        tools:layout="@layout/fragment_offer" >
+        <action
+            android:id="@+id/action_offerFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+        <argument
+            android:name="appId"
+            app:argType="integer" />
+        <argument
+            android:name="userId"
+            app:argType="string" />
+        <argument
+            android:name="securityToken"
+            app:argType="string" />
+    </fragment>
+</navigation>
